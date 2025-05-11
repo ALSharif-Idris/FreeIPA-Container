@@ -1,0 +1,14 @@
+First, you need to have any distro of linux, then install Podman or Docker. You can pull this image by: 
+podman pull 
+Check the image if it's saved on your Linux server or not by: podman images ps
+After that, copy the entrypoint.sh , is a shell script that serves as the container’s entrypoint.
+It tells the container what to do when it starts. It is used to initialize services or configurations before the container fully starts.
+fully starts.
+Entrypoint in FreeIPA Context:
+For your FreeIPA container, the entrypoint typically needs to:
+1.	Handle first-time initialization
+2.	Start necessary services
+3.	Manage the lifecycle of the IPA server
+you can edit the entrypoint.sh file with your own arguments.
+
+
